@@ -1,4 +1,3 @@
-// styles.scss
-.testing {
-  width: percentage(5/7);
-}
+// Main styles
+@import 'boilerplate/normalize';
+@import 'boilerplate/main';
