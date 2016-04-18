@@ -20,6 +20,11 @@ body {
   color: $body-color;
 }
 
+.container {
+  overflow: auto;
+  overflow-x: hidden;
+}
+
 // .container {
 //   width: 85%;
 //   margin: 0 auto;
@@ -56,3 +61,10 @@ h2 {
   transform-origin: center top;
   transform: rotate(-5deg)translateX(-50%)translateY(-100%);
 }
+
+.contact:before {
+  z-index: -50;
+}
+
+// Media Queries
+@import 'partials/breakpoints';
