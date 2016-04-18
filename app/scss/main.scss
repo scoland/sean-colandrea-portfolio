@@ -70,23 +70,70 @@ h2 {
   z-index: 10;
 }
 
+.contact:before, .projects:before {
+  content: '';
+  display: block;
+  height: 80px;
+  width: 120%;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  background: #FFF;
+  transform: rotate(-5deg)translateX(-50%);
+  transform-origin: center top;
+  transform: rotate(-5deg)translateX(-50%)translateY(-100%);
+}
+
 .projects {
+  h2 {
+    margin-bottom: 2em;
+  }
+
+  .projects-inner {
+    width: 85%;
+    margin: 0 auto;
+  }
+
   margin-top: 5rem;
   position: relative;
   padding-top: 6rem;
-  &:before {
-    content: '';
-    display: block;
-    height: 100px;
-    width: 120%;
-    position: absolute;
-    left: 50%;
-    top: 0;
-    background: #FFF;
-    transform: rotate(-5deg)translateX(-50%);
-    transform-origin: center top;
-    transform: rotate(-5deg)translateX(-50%)translateY(-100%);
+
+  .project {
+    h3 {
+      font-family: $header-stack;
+      color: black;
+      text-transform: uppercase;
+      font-size: 1.333rem;
+      margin-top: 2rem;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+    p {
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    margin-bottom: 2rem;
+    border-bottom: 1px solid $body-color;
+
+    &:last-of-type {
+      border: none;
+    }
   }
-    background-color: $main-gray;
-    text-align: center;
+
+  padding-bottom: 6rem;
+
+  background-color: $main-gray;
+  text-align: center;
+}
+
+.contact {
+  text-align: center;
+  position: relative;
+  padding-top: 1rem;
+
 }
