@@ -1,0 +1,46 @@
+.projects {
+  h2 {
+    margin-bottom: 2em;
+  }
+
+  .projects-inner {
+    width: 85%;
+    margin: 0 auto;
+  }
+
+  margin-top: 5rem;
+  position: relative;
+  padding-top: 6rem;
+
+  .project {
+    h3 {
+      font-family: $header-stack;
+      color: black;
+      text-transform: uppercase;
+      font-size: 1.333rem;
+      margin-top: 2rem;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+    p {
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    margin-bottom: 2rem;
+    border-bottom: 1px solid $body-color;
+
+    &:last-of-type {
+      border: none;
+    }
+  }
+
+  padding-bottom: 6rem;
+
+  background-color: $main-gray;
+  text-align: center;
+}
