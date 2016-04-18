@@ -19,7 +19,7 @@ gulp.task('sass', function() {
 gulp.task('useref', function(){
   return gulp.src('app/*.html')
     .pipe(useref())
-    // .pipe(gulpIf('*.jf'), uglify())
+    .pipe(gulpIf('*.js', uglify()))
     .pipe(gulp.dest('build'))
 })
 
