@@ -82,5 +82,25 @@
     bottom: 3rem;
   }
 
+}
 
+@media only screen and (min-width: 1200px) { 
+  .about {
+    p {
+      width: 75%;
+      line-height: 190%;
+    }
+  }
+}
+
+@media only screen and (min-width: 2000px) { 
+  .contact:before, .projects:before {
+    height: 250px;
+  }
+
+  .about {
+    p {
+      width: 50%;
+    }
+  }
 }
