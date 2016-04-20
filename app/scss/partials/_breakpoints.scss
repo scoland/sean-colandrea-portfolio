@@ -39,6 +39,7 @@
 
   .project .image-contain {
     position: relative;
+    overflow:hidden;
   }
 
   .project a:before {
@@ -49,7 +50,7 @@
     height: 100%;
     max-height: 100%;
     position: absolute;
-    top: 0;
+    top: 7%;
     left: 0;
     z-index: 100;
   }
@@ -63,7 +64,7 @@
     border: 4px solid white;
     color: white;
     position: absolute;
-    top: calc(50% - 20px);
+    top: calc(53% - 20px);
     left: calc(50% - 83.5px);
     padding: .2rem 1rem;
     z-index: 200;
