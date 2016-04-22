@@ -5,11 +5,13 @@ var autoprefixer = require('gulp-autoprefixer')
 var useref = require('gulp-useref')
 var uglify = require('gulp-uglify')
 var gulpIf = require('gulp-if')
+var nano = require('gulp-cssnano')
 
 gulp.task('sass', function() {
   return gulp.src('app/scss/main.scss')
     .pipe(sass())
     .pipe(autoprefixer())
+    .pipe(nano())
     .pipe(gulp.dest('build/css'))
     .pipe(browserSync.reload({
       stream: true
