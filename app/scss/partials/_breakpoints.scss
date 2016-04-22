@@ -84,6 +84,10 @@
     bottom: 3rem;
   }
 
+  svg {
+    width: 60%;
+  }
+
 }
 
 @media only screen and (min-width: 1200px) { 
@@ -92,6 +96,10 @@
       width: 75%;
       line-height: 190%;
     }
+  }
+
+  svg {
+    width: 50%;
   }
 }
 
